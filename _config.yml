@@ -9,7 +9,7 @@ pagination:
   limit: 0
   sort_field: 'title'
   sort_reverse: false
-url: https://device.arrowos.net
+url: https://devices.arrowos.net
 permalink: '/:slug'
 
 # Optional settings
