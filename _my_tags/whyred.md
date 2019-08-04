@@ -1,4 +1,4 @@
 ---
-slug: redmi-note-5-pro
+slug: whyred
 name: Redmi Note 5 pro
 ---

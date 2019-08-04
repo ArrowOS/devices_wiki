@@ -1,4 +1,4 @@
 ---
-slug: redmi-note-3
+slug: kenzo
 name: Redmi Note 3
 ---

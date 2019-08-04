@@ -3,8 +3,9 @@ layout: post
 title: "Xiaomi Redmi Note 5 Pro [Whyred]"
 description: "Know more news and tricks about your device from your maintainer."
 thumb_image: "https://i.gadgets360cdn.com/large/xiaomi_redmi_note_5_pro_main_1536035801942.jpg"
-tags: [arrowos, android, know-more, redmi-note-5-pro]
-device-tag: [redmi-note-5-pro]
+tags: [know-more, whyred]
+device-tag: [whyred]
+slug: whyred
 ---
 Published by **Raj Jadeja** on _20th Oct, 2018_ <br> 
 _Last edit: 20th Oct, 2018_

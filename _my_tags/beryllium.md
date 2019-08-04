@@ -1,4 +1,4 @@
 ---
-slug: pocophone-f1
+slug: beryllium
 name: Pocophone F1
 ---

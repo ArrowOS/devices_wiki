@@ -3,8 +3,9 @@ layout: post
 title: "Pocophone F1 [beryllium]"
 description: "Know more news and tricks about your device from your maintainer."
 thumb_image: "https://st1.bgr.in/wp-content/uploads/2018/08/Poco-F1-product-page-3.jpg"
-tags: [know-more, pocophone-f1]
-device-tag: [pocophone-f1]
+tags: [know-more, beryllium]
+slug: beryllium
+device-tag: [beryllium]
 ---
 Published by **Ganesh Varma** on _18th Oct, 2018_ <br> 
 _Last edit: 18th Oct, 2018_

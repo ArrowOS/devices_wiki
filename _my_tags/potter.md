@@ -1,4 +1,4 @@
 ---
-slug: moto-g5-plus
+slug: potter
 name: Moto G5 Plus
 ---
