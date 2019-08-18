@@ -3,14 +3,10 @@ layout: post
 title: "Pocophone F1 [beryllium]"
 description: "Know more news and tricks about your device from your maintainer."
 thumb_image: "https://st1.bgr.in/wp-content/uploads/2018/08/Poco-F1-product-page-3.jpg"
-tags: [know-more, beryllium]
 slug: beryllium
-device-tag: [beryllium]
 ---
-Published by **Ganesh Varma** on _18th Oct, 2018_ <br> 
-_Last edit: 18th Oct, 2018_
 
-#### Maintainer : Ganesh Varma
+#### Maintainer : Ganesh Varma, KuberSharma
 <br>
 
 ### Device status:
@@ -31,8 +27,7 @@ _Last edit: 18th Oct, 2018_
   - Volte
 
 #### What doesn't work:
-  - IR camera (blame xiaomi for not providing the source)
-  - hotspot (fix soonTM)
+  - You say me
 
 Hello there this is Ganesh Varma, your Pocophone F1 device maintainer for ArrowOS. I'll be interacting with you guys over here in the comments section regarding any device specific queries and also will be sharing a few tweaks/tricks/mods that i use on the device. With no doubt Poco F1 has been really great device done by Xiaomi soo far and am really pleased with their concern and support towards the custom rom community.
 
@@ -46,18 +41,16 @@ Hello there this is Ganesh Varma, your Pocophone F1 device maintainer for ArrowO
 ### Mods:
 I'm more into rooting and can't get past a day without mods. I use magisk for root and most of it's good modules.<br>
 #### Here are a few of the mods that i use:
-  - Google sans font
   - Lawnstep
   - Youtube vanced black themed
 
-#### Substratum themes:
-  - Swift black
-  - Flux
+#### Themes:
+  - Swift Installer
 
 Let me know about the tweaks and mods that you use in the comments sections below. Will be happy to try them out. 😉
 
 #### XDA thread:
 [Pocophone f1 ArrowOS Pie thread](https://forum.xda-developers.com/poco-f1/development/pie-arrowos-poco-f1-t3852222)
-[Rom download](https://sourceforge.net/projects/arrow-os/files/arrow-9.x/beryllium/Arrow-v9.0-beryllium-OFFICIAL-20181009.zip/download)
+[Rom download](https://sourceforge.net/projects/arrow-os/files/arrow-9.x/beryllium/)
 
 _*This post will be updated gradually with more tweaks and info._

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <main>
+      <div class="grid-cell">
+        {% include navigation.html %}
+        {% for device in site.deviceAbout %}
+          {% if device.slug == page.slug %}
+            {% if device.name and device.name != blank %}
+              <h1>{{ device.name }}</h1>
+            {% endif %}
+            {% if device.description and device.description != blank %}
+              <p>{{ device.description }}</p>
+            {% endif %}
+            <br>
+            <!-- content from initial post -->
+            <div id="device-about" style="float: left; width: 50%;">
+              {% if device.maintainer and device.maintainer != blank %}
+                <p style="color: #4286f4; float: left;">Maintainer:&nbsp;</p>
+                <p>{{ device.maintainer }}</p>
+              {% endif %}
+
+              {% if device.status and device.status != blank %}
+              <p style="color: #4286f4; float: left;">Status:&nbsp;</p>
+              <p>{{ device.status }}</p>
+              {% endif %}
+              <br/>
+
+              <div class="article-content">
+                {{ content }}
+              </div>
+
+              <!-- device posts if any -->
+              <h3>More posts on {{ device.name }}</h3>
+              <ul class="article-list">
+                {% for post in site.devicePosts %}
+                  {% if post.slug == page.slug %}
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                      <h5>
+                        {{ post.title }}
+                      </h5>
+                    </a>
+                    <p>
+                      {% if post.description %}
+                        {{ post.description }}  
+                      {% else %}
+                        {{ post.excerpt }}
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+
+            <!-- device basic hardware info -->
+            {% if device.image and device.image != blank %}
+            <div style="float: right;">
+              <img style="width: 50%;" src="{{ device.image }}">
+              <br/>
+            {% endif %}
+              <table>
+                <tbody>
+                  {% if device.soc and device.soc != blank %}
+                  <tr><th style="text-align: center;" scope="row" colspan="2">{{ device.name }} ({{ device.slug }})</th></tr>
+                  <tr>
+                    <th scope="row" colspan="2">SoC:</th>
+                    <td>{{ device.soc }}</td> 
+                  </tr>
+                  {% endif %}
+                  {% if device.cpu and device.cpu != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">CPU:</th>
+                    <td>{{ device.cpu }}</td> 
+                  </tr>
+                  {% endif %}
+                  {% if device.arch and device.arch != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">Arch:</th>
+                    <td>{{ device.arch }}</td> 
+                  </tr>
+                  {% endif %}
+                  {% if device.ram and device.ram != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">Ram:</th>
+                    <td>{{ device.ram }}</td> 
+                  </tr>
+                  {% endif %}
+                  {% if device.battery and device.battery != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">Battery:</th>
+                    <td>{{ device.battery }}</td> 
+                  </tr>
+                  {% endif %}
+                  {% if device.main_camera and device.main_camera != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">Main Camera:</th>
+                    <td>{{ device.main_camera }}</td>
+                  </tr>
+                  {% endif %}
+                  {% if device.selfie_camera and device.selfie_camera != blank %}
+                  <tr>
+                    <th scope="row" colspan="2">Selfie Camera:</th>
+                    <td>{{ device.selfie_camera }}</td> 
+                  </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <!-- Discuss comments section -->
+      {% if site.discus_identifier %}
+      <div id="disqus_thread" class="article-comments"></div>
+      <script src="https://{{ site.discus_identifier }}.disqus.com/embed.js" async defer></script>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+      {% endif %}
+    </main>
+    {% include javascripts.html %}
+  </body>
+</html>
